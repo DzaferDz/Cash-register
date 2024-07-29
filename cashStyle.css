@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to left top, #8e15a8, #9733b2, #a049bb, #aa5dc4, #b36fcd, #b071cb, #ad72ca, #aa74c8, #9a66bc, #8b58b0, #7b4aa4, #6b3d98);
+    color: #f0f0f0;
+}
+h1{
+    margin-top: 15px;
+}
+p{
+    font-size: 1.2rem;
+}
+.cash-register{
+    background: linear-gradient(#6b3d98, #0a0a10);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 60%;
+    padding: 5px;
+    border: 8px solid #0a0a10;
+    border-radius: 10px;
+}
+.cash-register input{
+    width: 90%;
+    height: 2.5rem;
+    margin-left: 5%;
+    background:  #c0c0c0;
+    text-align: center;
+}
+.screen-container{
+    position: absolute;
+    top: 25%;
+    right: 5.5%;
+    background:  #c0c0c0;
+    width: 20.5%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 10px;
+}
+.screen-container p {
+    background: radial-gradient(#6b3d98, #0a0a10);
+            -webkit-background-clip: text;
+            color: transparent;
+    font-size: 2rem;
+    margin: 5px;
+}
+#purchase-btn{
+    position: absolute;
+    top: 79.7%;
+    right: 5.25%;
+    width: 20.8%;
+    background-color: #c0c0c0;
+    border: 2px solid #0a0a10;
+    color: #6b3d98;
+    height: 8%;
+    border-bottom-right-radius: 10px;
+}
+/*(62.5% - height od the remaining containers), (34.25 - width of the remaining containers)*/
+#purchase-btn:hover{
+    background-color: #e0d0e0;
+    color: #0a0a10;
+}
+.cash-drawer-display, #change-due{
+    width: 34.25%;
+    height: 62.5%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c0c0c0;
+    top: 25%;
+    
+}
+.cash-drawer-display{
+    left: 5.5%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+#change-due{
+    left: 39.75%;
+}
+.cash-drawer-display p, #change-due p, #change-due span, .cash-drawer-display span{
+    background: radial-gradient(#6b3d98, #0a0a10);
+}

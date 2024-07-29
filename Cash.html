@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cashStyle.css">
+</head>
+<body>
+    <h1 class="text-center">Cash register app</h1>
+    
+    <div class="cash-register">
+        <div class="screen-container">
+            <p id="price-screen" class="price-screen">Total: <br> $3.25</p></div>
+        <p class="text-center">Enter cash from customer:</p>
+        <input type="number" name="cash" id="cash">
+        <button id="purchase-btn" type="button">Purchase</button>
+        <div id="change-due">
+            <span></span><p></p>
+        </div>
+        <div id="cash-drawer-display" class="cash-drawer-display"></div>
+    </div>   
+    
+<script src="cashScript.js"></script>
+</body>
+</html>
