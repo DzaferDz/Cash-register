@@ -27,6 +27,8 @@ p{
     padding: 5px;
     border: 8px solid #0a0a10;
     border-radius: 10px;
+    min-width: 400px;
+    min-height: 400px;
 }
 .cash-register input{
     width: 90%;
@@ -91,4 +93,13 @@ p{
 }
 .cash-drawer-display p, #change-due p, #change-due span, .cash-drawer-display span{
     background: radial-gradient(#6b3d98, #0a0a10);
+}
+@media (max-width: 850px){
+    .screen-container p {
+    font-size: 1.4rem;
+    margin: 5px;
+}
+.cash-drawer-display p, #change-due p, #change-due span, .cash-drawer-display span{
+    font-size: 1.1rem;
+}
 }
