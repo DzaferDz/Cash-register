@@ -81,6 +81,10 @@ p{
     align-items: center;
     background-color: #c0c0c0;
     top: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     
 }
 .cash-drawer-display{
@@ -89,10 +93,12 @@ p{
     border-top-left-radius: 10px;
 }
 #change-due{
-    left: 39.75%;
-}
+    left: 39.75%;}
 .cash-drawer-display p, #change-due p, #change-due span, .cash-drawer-display span{
-    background: radial-gradient(#6b3d98, #0a0a10);
+    background: radial-gradient(#6b3d98, #0a0a10);  -webkit-background-clip: text;
+            color: transparent;
+            font-size: 1rem;
+            margin: 1px;
 }
 @media (max-width: 850px){
     .screen-container p {
@@ -100,6 +106,6 @@ p{
     margin: 5px;
 }
 .cash-drawer-display p, #change-due p, #change-due span, .cash-drawer-display span{
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 }
